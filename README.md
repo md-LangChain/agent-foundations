@@ -18,13 +18,13 @@ A ~25 minute hands-on notebook: start with a standard LangChain agent (`create_a
 ```bash
 uv sync
 cp .env.example .env
-# fill in LANGSMITH_API_KEY and LC_GATEWAY_KEY
+# fill in LANGSMITH_API_KEY and OPENAI_API_KEY
 uv run jupyter notebook agent_foundations.ipynb
 ```
 
 ## Needs
 
 - `LANGSMITH_API_KEY` — tracing and sandbox
-- `LC_GATEWAY_KEY` — LangSmith LLM Gateway service key (used as `OPENAI_API_KEY` against the gateway; not a platform.openai.com key)
+- `OPENAI_API_KEY` — model calls
 
 No Tavily key required.
